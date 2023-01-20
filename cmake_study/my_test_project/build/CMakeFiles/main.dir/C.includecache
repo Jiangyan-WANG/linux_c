@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/swap.h
+
+/home/wjy/Desktop/cmake_study/my_test_project/main.c
+stdio.h
+-
+swap.h
+/home/wjy/Desktop/cmake_study/my_test_project/swap.h
+
+/home/wjy/Desktop/cmake_study/my_test_project/src/swap.c
+swap.h
+/home/wjy/Desktop/cmake_study/my_test_project/src/swap.h
+

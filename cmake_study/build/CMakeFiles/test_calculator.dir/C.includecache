@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wjy/Desktop/cmake_study/add.c
+add.h
+/home/wjy/Desktop/cmake_study/add.h
+
+/home/wjy/Desktop/cmake_study/add.h
+
+/home/wjy/Desktop/cmake_study/div.c
+div.h
+/home/wjy/Desktop/cmake_study/div.h
+
+/home/wjy/Desktop/cmake_study/div.h
+
+/home/wjy/Desktop/cmake_study/mul.c
+mul.h
+/home/wjy/Desktop/cmake_study/mul.h
+
+/home/wjy/Desktop/cmake_study/mul.h
+
+/home/wjy/Desktop/cmake_study/sub.c
+sub.h
+/home/wjy/Desktop/cmake_study/sub.h
+
+/home/wjy/Desktop/cmake_study/sub.h
+
+/home/wjy/Desktop/cmake_study/test.c
+stdio.h
+-
+add.h
+/home/wjy/Desktop/cmake_study/add.h
+sub.h
+/home/wjy/Desktop/cmake_study/sub.h
+mul.h
+/home/wjy/Desktop/cmake_study/mul.h
+div.h
+/home/wjy/Desktop/cmake_study/div.h
+

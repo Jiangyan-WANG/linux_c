@@ -1,0 +1,6 @@
+cp: 缺少了文件操作数
+Try 'cp --help' for more information.
+cp: 缺少了文件操作数
+Try 'cp --help' for more information.
+mv: 缺少了文件操作数
+Try 'mv --help' for more information.

@@ -1,0 +1,25 @@
+du -sh *
+11M	Auto-configuration-vim
+768K	cmake_study
+20K	gdbtest
+20K	hahaha
+4.0K	ifconfig.txt
+92K	processt
+116K	shelltest
+4.0K	sizeDir.txt
+244K	systemio
+116K	test
+80K	test2
+72K	testmk
+4.9M	Auto-configuration-vim
+768K	cmake_study
+20K	gdbtest
+20K	hahaha
+4.0K	ifconfig.txt
+92K	processt
+116K	shelltest
+4.0K	sizeDir.txt
+244K	systemio
+116K	test
+80K	test2
+72K	testmk

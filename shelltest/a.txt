@@ -1,0 +1,12 @@
+#INCLUDE <STDIO.H>
+#INCLUDE <CRYPT.H>
+
+INT MAIN(){
+
+    CHAR LTR;
+    WHILE((LTR=GETCHAR())!=EOF)
+    {
+        PUTCHAR(TOUPPER(LTR));
+    } 
+    RETURN 0;
+}

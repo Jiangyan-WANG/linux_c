@@ -1,0 +1,3 @@
+/home/wjy/Desktop/cmake_study/build/CMakeFiles/rebuild_cache.dir
+/home/wjy/Desktop/cmake_study/build/CMakeFiles/test_calculator.dir
+/home/wjy/Desktop/cmake_study/build/CMakeFiles/edit_cache.dir

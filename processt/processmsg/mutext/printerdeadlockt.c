@@ -1,0 +1,92 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <string.h>
+
+// declare lock
+pthread_mutex_t lock;
+pthread_mutex_t lock2;
+
+void * fun1(void * arg)
+{
+
+    sleep(1);
+    //lock
+    for(int i=0;i<100;i++)
+    {
+    usleep(100000);
+        
+
+    pthread_mutex_lock(&lock);
+
+    printf("thread 1 apply\n");
+    pthread_mutex_lock(&lock2);
+
+    printf("[%d] I am thread 1\n",i);
+    //unlock
+
+    pthread_mutex_unlock(&lock2);
+    pthread_mutex_unlock(&lock);
+    }
+    return NULL;
+
+}
+
+void * fun2(void * arg)
+{
+
+    sleep(1);
+    //lock
+    for(int i=0;i<100;i++)
+    {
+    usleep(100000);
+    pthread_mutex_lock(&lock2);
+    printf("thread 2 apply\n");
+    pthread_mutex_lock(&lock);
+
+    printf("[%d] I am thread 2\n",i);
+    //unlock
+
+    pthread_mutex_unlock(&lock);
+    pthread_mutex_unlock(&lock2);
+    }
+    return NULL;
+}
+
+
+int main()
+{
+
+    //init
+    pthread_t ctid1;
+    pthread_t ctid2;
+    memset(&ctid1,0,sizeof(ctid1));
+    memset(&ctid2,0,sizeof(ctid2));
+    
+    //init lock
+    pthread_mutex_init(&lock, NULL);
+    pthread_mutex_init(&lock2, NULL);
+   
+    pthread_create(&ctid1, NULL, fun1, NULL);
+    pthread_create(&ctid2, NULL, fun2, NULL);
+
+    //restore
+
+    pthread_join(ctid1,NULL);
+    
+
+    printf("thread 1 resotred...\n");
+
+    pthread_join(ctid2,NULL);
+    printf("thread 1 resotred...\n");
+
+    //destroy lock
+    pthread_mutex_destroy(&lock);
+    pthread_mutex_destroy(&lock2);
+    printf("lock destroyed...Bye\n");
+
+
+    getchar();
+    return 0;
+}

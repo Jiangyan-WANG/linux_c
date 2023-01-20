@@ -1,0 +1,21 @@
+ls | sort -t. -k2
+hello
+toupper
+upper.c
+add.sh
+forloop.sh
+func.sh
+specialdollor.sh
+study.sh
+subshell.sh
+test.sh
+aDemoRecurTest.tar.gz
+a.txt
+apple.txt
+banana.txt
+orange.txt
+sortedbyage.txt
+sortedbyatk.txt
+sortthefile.txt
+stderr.txt
+tosort.txt

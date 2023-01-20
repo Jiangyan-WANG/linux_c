@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/test_calculator.dir/add.c.o CMakeFiles/test_calculator.dir/sub.c.o CMakeFiles/test_calculator.dir/mul.c.o CMakeFiles/test_calculator.dir/div.c.o CMakeFiles/test_calculator.dir/test.c.o  -o test_calculator 
